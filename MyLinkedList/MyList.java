@@ -31,6 +31,28 @@ public class MyList {
 		head = node;
 	}
 	
+	public void insertAt(int data, int index) {
+		Node node = new Node();
+		node.data = data;
+		node.next = null;
+		
+		if(index ==0) {
+			node.next = head;
+			head = node;
+		}
+		else {
+			Node temp = head;
+			int count = 0;
+			while(count<index-1) {
+				temp = temp.next;
+				count++;
+			}
+			
+			node.next = temp.next;
+			temp.next = node;
+		}
+	}
+	
 	public void removeFirst() {
 		Node temp = head;
 		head = temp.next;
@@ -47,6 +69,28 @@ public class MyList {
 				temp = temp.next;
 			}
 			temp.next = null;
+		}
+	}
+	
+	public void remomveAt(int index) {
+		Node cur = head;
+		Node previous = null;
+		
+		if(index == 0) {
+			head = cur.next;
+			cur.next = null;
+		}
+		else {
+			int count = 0;
+			
+			while(count < index) {
+				previous = cur;
+				cur = cur.next;
+				count++;
+			}
+			
+			previous.next = cur.next;
+			cur.next = null;
 		}
 	}
 	

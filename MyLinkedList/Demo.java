@@ -7,6 +7,8 @@ public class Demo {
 		list1.insertAtEnd(4);
 		list1.insertAtEnd(3);
 		list1.insertAtStart(1);
+		list1.insertAt(10, 1);
+		list1.remomveAt(2);
 		
 		Node head = list1.getHead();
 		
@@ -17,9 +19,9 @@ public class Demo {
 //		System.out.print("Reversed linked list: ");
 //		list1.display(newHead);
 		
-		Node newHead = list1.reverseWithRecursion(head);
-		System.out.print("Reversed linked list: ");
-		list1.display(newHead);
+//		Node newHead = list1.reverseWithRecursion(head);
+//		System.out.print("Reversed linked list: ");
+//		list1.display(newHead);
 		
 //		System.out.println(list1.size());
 //		
