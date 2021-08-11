@@ -14,6 +14,7 @@ public class StackUsingQueue2 {
 		s1.display();
 		s1.push(3);
 		s1.display();
+		
 		System.out.println(s1.size());
 		s1.push(4);
 		s1.display();
