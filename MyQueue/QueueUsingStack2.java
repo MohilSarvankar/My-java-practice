@@ -1,4 +1,5 @@
 package MyQueue;
+import java.util.Arrays;
 /*
  * Implementing queue using stack by making dequeue costly
  */
